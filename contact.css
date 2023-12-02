@@ -1,17 +1,15 @@
-::-webkit-scrollbar{
-    height: 0;
-    width: 0;
-    
+::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #121212;
   color: #fff;
   margin: 0;
   padding: 0;
-  background: url('contact.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #000000e7;
+  box-sizing: border-box;
 }
 
 header {
@@ -31,6 +29,7 @@ header h1 {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow menu items to wrap on smaller screens */
 }
 
 .header-menu li {
@@ -48,17 +47,6 @@ header h1 {
   color: orange;
 }
 
-.social-icon {
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-}
-.container h1{
-  text-shadow: 3px 5px 20px rgb(0, 0, 0);
-  
-  /* Apply backdrop filter for blur */
-  webkit-backdrop-filter: blur(10px);
-}
 .container {
   border-radius: 15px;
   width: 90%; /* Use percentage for width */
@@ -69,6 +57,29 @@ header h1 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
+
+h1 {
+  font-size: 2em; /* Use relative units for font-size */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+
+  header h1 {
+      font-size: 24px;
+  }
+
+  .header-menu li {
+      margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Additional styles for even smaller screens */
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -83,13 +94,19 @@ h1 {
   text-shadow: 1px 3px 30px #000000;
 }
 
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
 p {
   color: #ffffff;
 }
 
 ul {
   list-style: none;
-  padding: 1px;
+  padding: 0px;
   margin: auto;
 }
 
@@ -155,6 +172,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
 }
 
 .btn1 {
