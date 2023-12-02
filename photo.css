@@ -94,6 +94,11 @@ header h1 {
   /* opacity: 0.8; */
 }
 
+@media screen and (max-width: 768px) {
+  .artwork {
+    width: calc(200% - 5vw); /* Adjust the width for two items per row on smaller screens */
+  }}
+
 
 
 
