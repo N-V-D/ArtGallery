@@ -92,8 +92,8 @@ header h1 {
 .gallery-item {
   
   z-index: 0;
-  width: 50vh;
-  height: 50vh;
+ width: 24em;
+  height: 26.4em;
   /* background-color: #eeeeee82; */
   border-radius: 10%;
   margin: 25px;
