@@ -284,7 +284,11 @@ header h1 {
   background-size: cover;
   background-position: center;
 }
-
+#artwork33 {
+  background-image: url('eren.jpeg');
+  background-size: cover;
+  background-position: center;
+}
 
 
 
